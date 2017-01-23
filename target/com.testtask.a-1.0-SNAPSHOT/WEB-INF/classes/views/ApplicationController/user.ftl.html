@@ -1,0 +1,14 @@
+<#import "../layout/defaultLayout.ftl.html" as layout>
+    <@layout.myLayout "Home page">
+
+</br>
+<img src="/assets/img/avatar.jpg" alt="" width="200"></br></br>
+<label class="colorize-font">${i18n("form.hello")} ${user.name}!!!</label></th></br></br>
+
+<form action="/exit" method="get">
+    <p>
+        <input type="submit" value="${i18n("form.exit")}" />
+    </p>
+</form>
+
+</@layout.myLayout>

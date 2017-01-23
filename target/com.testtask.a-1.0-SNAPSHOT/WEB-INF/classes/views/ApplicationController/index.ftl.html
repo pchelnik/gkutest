@@ -1,0 +1,22 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Home page">
+
+<br />
+    <form action="/save" enctype="multipart/form-data" method="post">
+        <label class="colorize-font">${i18n("form.selectpic")}</label><br/>
+        <input type="file" name="upfile"><br />
+        <table class="form">
+            <tr>
+                <th><label class="colorize-font for="name">${i18n("form.typeusername")}</label></th>
+            </tr>
+            <tr>
+                <td><input class="input_full" type="text" id="name" name="name"/></td>
+            </tr>
+        </table>
+        <br>
+        <p>
+            <input type="submit" value="${i18n("form.login")}" />
+        </p>
+    </form>
+
+</@layout.myLayout>
